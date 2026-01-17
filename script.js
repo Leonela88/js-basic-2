@@ -89,23 +89,23 @@ const $weather = "frío"
 const $result = $weather === "soleado" ? "Me vestire con un vestido" : "Me vestiré con pantalón";
 console.log($result)
 
-// //Ejercicio 8: Escribe un programa que al darle la constante 'value' imprima en consola "Es un número" cuando el valor sea de tipo number, "Es un string" cuando el valor sea de tipo string o si no es ni uno ni otro que imprima "No es ni número ni string". Puedes hacerlo con cualquier tipo de condicional.
+// //Ejercicio 8: Escribe un programa que al darle la constante 'value' imprima en consola "Es un número"
+//  cuando el valor sea de tipo number, "Es un string" cuando el valor sea de tipo string o si no es ni uno ni otro
+//  que imprima "No es ni número ni string". Puedes hacerlo con cualquier tipo de condicional.
 
 const value = '1'
 
 // //Escribe tu código aquí
 
-
-switch (value) {
-    case 1:
-        console.log("Es un número")
+switch (typeof value) { 
+    case "number": 
+        console.log("Es un número");
         break;
-    case "1":
-        console.log("Es un string")
+    case "string":
+        console.log("Es un string");
         break;
     default:
-        console.log("No es ni número ni string")
-
+        console.log("No es ni número ni string");
 }
 
 // //BUCLES
